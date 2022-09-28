@@ -1,5 +1,6 @@
 on:
   repository_dispatch:
+    types: [ deploy_service ]
   
 jobs:
   job:
