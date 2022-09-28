@@ -1,0 +1,9 @@
+on:
+  repository_dispatch:
+  
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print
+        run: echo "hello"
