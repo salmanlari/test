@@ -1,6 +1,7 @@
 on:
+  workflow_dispatch:
   repository_dispatch:
-    types: [ deploy_service ]
+    types: deploy_service
   
 jobs:
   job:
