@@ -1,12 +1,28 @@
-on:
-  workflow_dispatch:
-  repository_dispatch:
-    types: 
-      - deploy_service
+# on:
+#   workflow_dispatch:
+#   repository_dispatch:
+#     types: 
+#       - deploy_service
   
+# jobs:
+#   job:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: print
+#         run: echo "hello"
+
+
+
+on:
+  schedule:
+    - cron: '0 1 * * *'
+    
 jobs:
-  job:
+  cron-job:
     runs-on: ubuntu-latest
+
     steps:
-      - name: print
-        run: echo "hello"
+    - name: Run task
+      run: echo "This is a scheduled task."
+
+
