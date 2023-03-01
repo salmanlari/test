@@ -9,6 +9,7 @@ pipeline{
     stage ("create file"){
       steps{
         sh 'touch file10'
+        sh 'echo "hello" > file10'
       }
     }
   }
