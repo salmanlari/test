@@ -6,10 +6,10 @@ pipeline{
         sh 'echo "code check"' 
       }
     }
-    stage ("create file"){
+    stage ("test"){
       steps{
-        sh 'touch file1'
-        sh 'echo "hello" > file1'
+        sh 'echo "testing code"'
+    
       }
     }
   }
